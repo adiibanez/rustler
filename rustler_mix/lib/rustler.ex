@@ -165,7 +165,7 @@ defmodule Rustler do
 
         load_data = unquote(load_data)
 
-        # :erlang.load_nif(load_path, load_data)
+        :erlang.load_nif(load_path, load_data)
       end
     end
   end
